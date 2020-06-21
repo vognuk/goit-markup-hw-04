@@ -1,0 +1,765 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --header-blue: #2196f3;
+  --subtitle-color: #757575;
+  --logo-color-2-2: #000000;
+  --hero-ways-background: rgba(47, 48, 58, 0.8);
+  --title-color: #212121;
+  --svg-background-color: #f5f4fa;
+  --team-box-color: #f5f4fa;
+  --social-icon-color: #afb1b8;
+  --footer-color: #2f303a;
+  --button-text-color: #ffffff;
+  --contact-color: rgba(255, 255, 255, 0.6);
+  --copy-rights-color: rgba(255, 255, 255, 0.4);
+  --input-border-color: rgba(255, 255, 255, 0.3);
+  --logo-font: Raleway;
+
+  --section-padding: 94px;
+
+  /*variables for markup visualisation - comment for homework*/
+  --view-background-1: yellow;
+  --view-background-2: grey;
+  --view-background-3: black;
+}
+
+/* {
+  font-family: Roboto;
+  font-style: normal;
+} */
+
+/* Header menu items ------------------------------------- */
+.main-menu-link {
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.logo-container {
+  display: block;
+  margin-right: 85px;
+  flex-wrap: inherit;
+}
+
+.menu-list {
+  display: flex;
+  margin-right: 305px;
+
+  list-style-type: none;
+}
+
+.main-menu-link {
+  margin-right: 50px;
+}
+
+.menu-block {
+  display: block;
+  line-height: 80px;
+}
+
+.contacts-list {
+  display: flex;
+  list-style-type: none;
+}
+
+/* .header-contacts ---------------------------------------*/
+.header-contacts-item {
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--subtitle-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  margin-right: 30px;
+}
+
+/* Links common styles ----------------------------------- */
+
+/* links underline off */
+.logo-link,
+.main-menu-link,
+.contact-link,
+.instagram-link,
+.twitter-link,
+.facebook-link,
+.linkedin-link,
+.item-link,
+.portfolio-card {
+  text-decoration: none;
+}
+
+/* Contact links */
+.contact-link {
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--subtitle-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+/* Banner ------------------------------------------------- */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 600px;
+
+  background-image: url('../images/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero > h1 {
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--button-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  width: 695px;
+}
+
+.hero-ordering {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--button-text-color);
+  border-radius: 4px;
+  background: var(--header-blue);
+  margin-top: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  line-height: 38px;
+}
+
+/* Links common efects ------------------------------------*/
+
+/* Items change its color */
+.main-menu-link:hover {
+  color: var(--header-blue);
+}
+
+.contact-link:hover {
+  color: var(--header-blue);
+}
+
+/* links hover */
+.link-hover .item-link:hover {
+  text-decoration: none;
+}
+
+/* links focus */
+.link-hover:focus
+.item-link:focus
+/* .portfolio-card:focus */
+
+/* links visited */
+.link-hover:visited
+.item-link:visited {
+  text-decoration: none;
+}
+
+/* Invisible headers of page boxes ------------------------*/
+.hidden-title {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/* Principle container ------------------------------------*/
+
+.principles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.principles-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-top: var(--section-padding);
+}
+
+.principle-child {
+  display: flex;
+}
+
+.principles-image {
+  display: block;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+  background-color: var(--svg-background-color);
+}
+
+.principle-header {
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.principle-description {
+  color: var(--subtitle-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  width: 270px;
+}
+
+/* ways of development container ------------------------- */
+.ways-container {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.ways-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.ways-item {
+  margin-right: 30px;
+  width: calc((100% - 30px * 2) / 3);
+}
+
+.ways-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.ways-image {
+  width: 100%;
+  height: auto;
+}
+
+.container-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.ways-subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--button-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.ways-subtitle {
+  color: var(--button-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.container-header {
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* web studio team container -------------------------------*/
+.team-container {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* background-color: var(--team-box-color); */
+
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.team-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.team-member-box {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+  background-color: var(--button-text-color);
+}
+
+.team-member-box:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.member-image {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.member-name {
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.member-responsibility {
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--subtitle-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+}
+
+/* clients container ---------------------------------------*/
+.clients-container {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.clients-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clients-item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: calc((100% - 30px * 5) / 6);
+  height: 90px;
+  /* padding-top: 22px;
+  padding-right: 41px;
+  padding-bottom: 22px;
+  padding-left: 41px; */
+
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: var(--svg-background-color);
+}
+
+.clients-item-box:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Footer. Logo Web Studio styles -------------------------*/
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--footer-color);
+}
+
+.footer-main-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin-left: 214px; */
+  align-items: baseline;
+
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* margin-bottom: 60px; */
+}
+
+/* --- Logo style */
+.logo-link {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.logo-1-2 {
+  font-family: var(--logo-font);
+  color: var(--header-blue);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.logo-2-2 {
+  font-family: var(--logo-font);
+  color: var(--logo-color-2-2);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+.logo-2-3 {
+  font-family: var(--logo-font);
+  color: var(--button-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+/* --- Address */
+.logo-column {
+  width: calc((100% - 60px) / 4);
+}
+
+.footer-address {
+  /* font-family: Roboto;
+  font-style: normal; */
+  margin-right: 60px;
+}
+
+.contacts-links {
+  list-style-type: none;
+}
+
+.contact-item {
+  width: auto;
+  padding-bottom: 9px;
+}
+
+.address-post {
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--button-text-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.footer-social-list {
+  width: calc((100% - 60px) / 4);
+  /* width: 206px; */
+  margin-right: 60px;
+}
+
+/* --- Subscribe */
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 60px) / 2);
+}
+
+.footer-subscribe {
+  margin-bottom: 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--button-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 12px;
+  background-color: var(--footer-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--contact-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+
+  border: 1px solid var(--input-border-color);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  border-radius: 4px;
+  background-color: var(--footer-color);
+  border-radius: 4px;
+}
+
+.subscribe-button {
+  margin-top: 0px;
+  margin-left: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border: none;
+}
+
+/* .copyright {
+  margin-right: 0px;
+
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--copy-rights-color);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+} */
+
+/* Portfolio ----------------------------------------------*/
+.portfolio {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.portfolio-container {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+/* --- Portfolio menu */
+
+.portfolio-menu {
+  margin-bottom: 50px;
+
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-menu-list {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-button {
+  display: block;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+  /* margin: 0px; */
+  /* color: initial; */
+
+  border-color: var(--svg-background-color);
+  background-color: var(--svg-background-color);
+  border-radius: 4px;
+  border-style: solid;
+  /* border-width: none; */
+
+  line-height: 38px;
+  padding-right: 22px;
+  padding-left: 22px;
+  margin-left: 8px;
+
+  /* text-rendering: auto; */
+}
+
+.menu-link:hover {
+  color: var(--button-text-color);
+  background: var(--header-blue);
+}
+
+/* --- Portfolio cards---------------------------------- */
+.portfolio-wraper {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list-item {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  border: 1px solid;
+  border-color: var(--svg-background-color);
+}
+
+/* .portfolio-card:focus  */
+
+.portfolio-list-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio-image {
+  width: 100%;
+}
+
+.card-title {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  margin-left: 24px;
+
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.card-subtitle {
+  display: block;
+
+  font-family: Roboto;
+  font-style: normal;
+  color: var(--subtitle-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+
+/* Rules order */
+/* 1.Positioning */
+/* 2.Block model */
+/* 3.typography */
+/* 4.Displaying */
+
+/* .serv-class {
+  background-color: var(--view-background-1);
+  color: var(--view-background-2);
+  outline: 2px solid var(--view-background-3);
+} */
+
+/* .portfolio-list-item:nth-child(4n + 4) {
+  background-color: orange;
+} */
+
+/* 
+- Высоту для контента не использовать, у строчных их нет. */
