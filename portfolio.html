@@ -15,50 +15,56 @@
   <body>
     <!--main menu container-->
     <header>
-      <div class="serv-class logo-container">
-        <a class="serv-class logo-link" href="./index.html">
-          <span class="serv-class logo-2-2"
-            ><span class="serv-class logo-1-2">Web</span> Studio</span
-          >
+      <div class="logo-container">
+        <a class="logo-link" href="./index.html">
+          <span class="logo-2-2"><span class="logo-1-2">Web</span> Studio</span>
         </a>
       </div>
-      <ul class="serv-class menu-list">
+      <ul class="menu-list">
         <li>
-          <a
-            class="serv-class main-menu-link menu-block link-hover"
-            href="./index.html"
+          <a class="main-menu-link menu-block link-hover" href="./index.html"
             >Студия</a
           >
         </li>
         <li>
           <a
-            class="serv-class main-menu-link menu-block link-hover"
+            class="main-menu-link menu-block link-hover"
             href="./portfolio.html"
             >Портфолио</a
           >
         </li>
         <!--Is this link for an anchor?-->
         <li>
-          <a class="serv-class main-menu-link menu-block link-hover" href=""
-            >Контакты</a
-          >
+          <a class="main-menu-link menu-block link-hover" href="">Контакты</a>
         </li>
       </ul>
       <!-- Header contacts -->
-      <ul class="serv-class contacts-list">
-        <li class="serv-class header-contacts-item">
-          <a
-            class="serv-class contact-link menu-block link-hover"
-            href="tel:+380991111111"
-            >+38 099 111 11 11</a
+      <ul class="contacts-list">
+        <li class="header-contacts-item menu-block link-hover">
+          <a class="contact-link menu-block" href="mailto:info@example.com"
+            ><svg
+              class="header-icon"
+              width="10px"
+              height="15px"
+              preserveAspectRatio="xMaxYMax meet"
+            >
+              <use href="./images/sprite.svg#icon-contact-envelope"></use>
+            </svg>
+            <span class="header-number">info@devstudio.com</span></a
           >
         </li>
-        <li class="serv-class header-contacts-item menu-block link-hover">
-          <a
-            class="serv-class contact-link menu-block"
-            href="mailto:info@example.com"
-            >info@example.com</a
-          >
+        <li class="header-contacts-item">
+          <a class="contact-link menu-block link-hover" href="tel:+380991111111"
+            ><svg
+              class="header-icon"
+              width="10px"
+              height="15px"
+              preserveAspectRatio="xMaxYMax meet"
+            >
+              <use href="./images/sprite.svg#icon-contact-smartphone"></use>
+            </svg>
+            <span class="header-number">+38 099 111 11 11</span>
+          </a>
         </li>
       </ul>
     </header>
@@ -109,6 +115,7 @@
               <a
                 class="serv-class portfolio-card"
                 href="https://www.facebook.com/"
+                target="_blank"
               >
                 <img
                   class="serv-class portfolio-image card-image"
@@ -123,6 +130,7 @@
               <a
                 class="serv-class portfolio-card"
                 href="https://www.facebook.com/"
+                target="_blank"
               >
                 <img
                   class="serv-class portfolio-image card-image"
@@ -139,6 +147,7 @@
               <a
                 class="serv-class portfolio-card"
                 href="https://www.facebook.com/"
+                target="_blank"
               >
                 <img
                   class="serv-class portfolio-image card-image"
@@ -154,6 +163,7 @@
               <a
                 class="serv-class portfolio-card"
                 href="https://www.facebook.com/"
+                target="_blank"
               >
                 <img
                   class="serv-class portfolio-image card-image"
@@ -168,6 +178,7 @@
               <a
                 class="serv-class portfolio-card"
                 href="https://www.facebook.com/"
+                target="_blank"
               >
                 <img
                   class="serv-class portfolio-image card-image"
@@ -182,6 +193,7 @@
               <a
                 class="serv-class portfolio-card"
                 href="https://www.facebook.com/"
+                target="_blank"
               >
                 <img
                   class="serv-class portfolio-image card-image"
@@ -198,6 +210,7 @@
               <a
                 class="serv-class portfolio-card"
                 href="https://www.facebook.com/"
+                target="_blank"
               >
                 <img
                   class="serv-class portfolio-image card-image"
@@ -212,6 +225,7 @@
               <a
                 class="serv-class portfolio-card"
                 href="https://www.facebook.com/"
+                target="_blank"
               >
                 <img
                   class="serv-class portfolio-image card-image"
@@ -226,6 +240,7 @@
               <a
                 class="serv-class portfolio-card"
                 href="https://www.facebook.com/"
+                target="_blank"
               >
                 <img
                   class="serv-class portfolio-image card-image"
@@ -244,7 +259,7 @@
     <footer class="serv-class footer-container">
       <div class="serv-class footer-main-row">
         <div class="serv-class logo-column">
-          <a class="serv-class logo-link" href="./index.html">
+          <a class="serv-class footer-logo-link" href="./index.html">
             <span class="serv-class logo-2-3"
               ><span class="serv-class logo-1-2">Web</span> Studio</span
             >
@@ -275,33 +290,51 @@
         </div>
         <div class="serv-class footer-social">
           <span class="serv-class footer-subscribe">Присоеденяйтесь</span>
-          <ul class="serv-class footer-social-list">
-            <!-- <li class="serv-class instagramm">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
               <a
-                class="serv-class instagram-link link-hover"
-                href="https://www.instagram.com"
-                >Instagram</a
+                class="social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
               >
+                <svg class="footer-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-social-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="serv-class twitter">
-              <a class="serv-class twitter-link link-hover" href="https://twitter.com/"
-                >Twitter</a
-              >
-            </li>
-            <li class="serv-class facebook">
+            <li class="footer-social-item">
               <a
-                class="serv-class facebook-link link-hover"
+                class="social-link"
+                href="https://twitter.com/"
+                target="_blank"
+              >
+                <svg class="footer-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-social-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                class="social-link"
                 href="https://www.facebook.com/"
-                >Facebook</a
+                target="_blank"
               >
+                <svg class="footer-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-social-facebook"></use>
+                </svg>
+              </a>
             </li>
-            <li class="serv-class linkedin">
+            <li class="footer-social-item">
               <a
-                class="serv-class linkedin-link link-hover"
+                class="social-link"
                 href="https://www.linkedin.com/"
-                >Linkedin</a
+                target="_blank"
               >
-            </li> -->
+                <svg class="footer-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-social-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
         <!--form for subscribtion-->
@@ -316,7 +349,10 @@
               placeholder="E-mail"
             />
             <button class="serv-class hero-ordering subscribe-button">
-              Подписаться
+              <span class="input-text">Подписаться</span>
+              <svg width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-subscribe-send"></use>
+              </svg>
             </button>
           </div>
         </form>
