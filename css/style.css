@@ -487,15 +487,15 @@ header {
   border-radius: 50%;
 }
 
-/* .team-social-link, */
 .team-social-link:hover {
   background-color: var(--header-blue);
-  /* fill: var(--button-text-color); */
 }
 
 .team-social-link:hover svg {
   fill: var(--button-text-color);
 }
+
+/* svg */
 
 .team-icon {
   width: 20px;
@@ -711,25 +711,33 @@ header {
 }
 
 .footer-social-item {
+  list-style: none;
   width: 44px;
   height: 44px;
   padding: 0px;
   border: none;
   border-radius: 50%;
   background-color: var(--footer-social-bgr);
-  padding: 12px 12px;
 }
 
 .social-link {
-  width: 44px;
-  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
   padding: 0px;
   border: none;
   border-radius: 50%;
 }
 
-.footer-social-item:hover {
+.social-link:hover {
   background-color: var(--header-blue);
+}
+
+.social-link:hover svg {
+  fill: var(--button-text-color);
 }
 
 /* svg */
@@ -737,7 +745,6 @@ header {
 .footer-icon {
   width: 20px;
   height: 20px;
-  /* fill: currentcolor; */
   fill: var(--button-text-color);
 }
 
