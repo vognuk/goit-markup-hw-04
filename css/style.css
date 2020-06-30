@@ -204,7 +204,7 @@ header {
   width: 695px;
 }
 
-.hero-ordering {
+.button-style {
   display: flex;
   align-items: center;
   text-align: center;
@@ -282,18 +282,8 @@ header {
   padding-top: var(--section-padding);
 }
 
-.principle-child {
-  display: flex;
-}
-
-.principles-image {
-  display: block;
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  margin-bottom: 30px;
-  background-color: var(--svg-background-color);
+.principles-container:not(:last-child) {
+  margin-right: 30px;
 }
 
 .principle-header {
@@ -307,6 +297,33 @@ header {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
+.principles-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+
+  background-color: var(--svg-background-color);
+}
+
+.principle-icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* .principles-header::before {
+  display: block;
+  position: absolute;
+  content: './images/antenna1.svg';
+  width: calc((100% - 30px * 3) / 4);
+  height: 120px;
+} */
 
 .principle-description {
   font-family: Roboto;
@@ -322,8 +339,8 @@ header {
 /* ways of development container ------------------------- */
 .ways-container {
   width: 1170px;
-  /* padding-right: 15px;
-  padding-left: 15px; */
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 
@@ -338,9 +355,6 @@ header {
 
 .ways-item {
   position: relative;
-
-  display: flex;
-  align-items: flex-end;
 
   margin-right: 30px;
   width: calc((100% - 30px * 2) / 3);
@@ -406,6 +420,7 @@ header {
 }
 
 .container-header {
+  display: block;
   font-family: Roboto;
   font-style: normal;
   color: var(--title-color);
@@ -418,9 +433,13 @@ header {
 
 /* web studio team container -------------------------------*/
 .team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 1170px;
-  /* padding-right: 15px;
-  padding-left: 15px; */
+
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
   /* background-color: var(--team-box-color); */
@@ -736,14 +755,13 @@ header {
   padding: 0px;
   border: none;
   border-radius: 50%;
-  background-color: var(--footer-social-bgr);
 }
 
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
+  /* background-color: transparent; */
   width: 100%;
   height: 100%;
   padding: 0px;
@@ -816,7 +834,7 @@ header {
   border-radius: 4px;
 }
 
-.subscribe-button {
+.button-box {
   margin-top: 0px;
   margin-left: 12px;
 
@@ -828,7 +846,7 @@ header {
   border: none;
 }
 
-.subscribe-button svg {
+.button-box svg {
   fill: var(--button-text-color);
 }
 

@@ -77,9 +77,9 @@
           <h1 class="serv-class hero-title">
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <p>
-            <a class="serv-class hero-ordering">Заказать услугу</a>
-          </p>
+          <button class="serv-class button-style button-box">
+            <span class="input-text">Заказать услугу</span>
+          </button>
         </nav>
       </div>
 
@@ -88,11 +88,11 @@
         <!-- <h2 class="serv-class hidden-title">Главные принципы</h2> -->
         <div class="serv-class principles-container">
           <div class="serv-class principles-child">
-            <img
-              class="serv-class principles-image"
-              src="./images/antenna1.svg"
-              alt="Attention to details"
-            />
+            <div class="serv-class principles-background">
+              <svg class="principle-icon" width="32px" height="32px">
+                <use href="./images/sprite.svg#icon-principle1-antenna"></use>
+              </svg>
+            </div>
             <h3 class="serv-class principle-header">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
             <p class="serv-class principle-description">
               Идейные соображения, а также начало повседневной работы по
@@ -100,11 +100,11 @@
             </p>
           </div>
           <div class="serv-class principles-child">
-            <img
-              class="serv-class principles-image"
-              src="./images/clock1.svg"
-              alt="Punctuality"
-            />
+            <div class="serv-class principles-background">
+              <svg class="principle-icon" width="32px" height="32px">
+                <use href="./images/sprite.svg#icon-principle2-clock"></use>
+              </svg>
+            </div>
             <h3 class="serv-class principle-header">ПУНКТУАЛЬНОСТЬ</h3>
             <p class="serv-class principle-description">
               Задача организации, в особенности же рамки и место обучения кадров
@@ -112,11 +112,11 @@
             </p>
           </div>
           <div class="serv-class principles-child">
-            <img
-              class="serv-class principles-image"
-              src="./images/diagram.svg"
-              alt="Planing"
-            />
+            <div class="serv-class principles-background">
+              <svg class="principle-icon" width="32px" height="32px">
+                <use href="./images/sprite.svg#icon-principle3-diagram"></use>
+              </svg>
+            </div>
             <h3 class="serv-class principle-header">ПЛАНИРОВАНИЕ</h3>
             <p class="serv-class principle-description">
               Равным образом консультация с широким активом в значительной
@@ -124,11 +124,11 @@
             </p>
           </div>
           <div class="serv-class principles-child">
-            <img
-              class="serv-class principles-image"
-              src="./images/astronaut.svg"
-              alt="The modern technologies"
-            />
+            <div class="serv-class principles-background">
+              <svg class="principle-icon" width="32px" height="32px">
+                <use href="./images/sprite.svg#icon-principle4-astronaut"></use>
+              </svg>
+            </div>
             <h3 class="serv-class principle-header">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
             <p class="serv-class principle-description">
               Значимость этих проблем настолько очевидна, что реализация
@@ -595,7 +595,7 @@
               type="email"
               placeholder="E-mail"
             />
-            <button class="serv-class hero-ordering subscribe-button">
+            <button class="serv-class button-style button-box">
               <span class="input-text">Подписаться</span>
               <svg width="24px" height="24px">
                 <use href="./images/sprite.svg#icon-subscribe-send"></use>
